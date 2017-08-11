@@ -1,0 +1,1 @@
+1- O barramento de endereço é utilizado para 
