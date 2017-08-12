@@ -1,7 +1,0 @@
-1- O barramento de endereço é utilizado para indicar a origem ou destinos dos dados, o barramento de dados é onde se transmite dados entre as unidades
-
-2- RAM volátil, perde o conteúdo quando acaba a energia
-ROM não-volátil, mantém o conteúdo quando acaba a energia. A escrita é bem mais lenta do que para a memória RAM
-
-3-a- Na memoria RAM porque se trata de uma variavel auxilar e descartavel
-b- Na memoria ROM pois o programa deve ser mantido caso o sistema reinicie
