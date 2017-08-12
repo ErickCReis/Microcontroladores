@@ -40,7 +40,21 @@ Von Neumann: é processada uma única informação por vez, visto que nessa tecn
 - 5 . Considere a variável inteira `i`, armazenando o valor `0x8051ABCD`. Se `i` é armazenada na memória a partir do endereço `0x0200`, como ficam este byte e os seguintes, considerando que a memória é: (a) Little-endian; (b) Big-endian.
 
 (a)  Little-endian:
-
-`bytes` => `end. memória`
-
+```C
+(bytes) => (endereço de memória)
+'CD' => 0x0200
+'AB' => 0x0201
+'51' => 0x0202
+'80' => 0x0203
+```
+(b)  Big-endian:
+```C
+(bytes) => (endereço de memória)
+'80' => 0x0200
+'51' => 0x0201
+'AB' => 0x0202
+'CD' => 0x0203
+```
 - 6 . Sabendo que o processador do MSP430 tem registradores de 16 bits, como ele soma duas variáveis de 32 bits?
+
+Ele divide as variáveis de 32 bits em duas com 16 bits e depois soma os 16 primeiros de cada vaviável e por fim, utilizando o carry, soma os bits restantes.
