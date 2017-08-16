@@ -39,10 +39,8 @@ P1DIR = LED1 + LED2;
 int i;
 for(;;)
 {
-for(i=0; i<10 ; i++)
-{
 P1OUT ^= LED1 + LED2;
-}
+for(i=0; i<10 ; i++){}
 }
 }
 ```
