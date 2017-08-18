@@ -72,13 +72,9 @@ clr.w, dec.w, decd.w, inc.w e incd.w.
   
   (c) h *= 4;
   
-  `mov.w R6,R11`
+  `add.w R6,R6`
   
-  `add.w R11,R6`
-  
-  `add.w R11,R6`
-  
-  `add.w R11,R6`
+  `add.w R6,R6`
   
   (d) A[2] = A[1] + A[0];
 	
