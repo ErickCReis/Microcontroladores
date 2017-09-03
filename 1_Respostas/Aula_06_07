@@ -9,10 +9,29 @@ após `n+1` iterações, a raiz quadrada de `S` é dada por
 x(n+1) = (x(n) + S/x(n))/2
 ```
 
-O protótipo da função é:
 
 ```C
-unsigned int Raiz_Quadrada(unsigned int S);
+int Divisao(int dividendo,int divisor)
+{
+	if(dividendo < divisor){
+		return 0;
+	}
+	else{
+		dividendo -= divisor;
+		return (1 + Divisao(dividendo,divisor));
+	}
+}
+
+unsigned int Raiz_Quadrada(float s)
+{
+	float x = 0;
+	x = Divisao(s,2);
+
+	while((x - Divisao((x + Divisao(s,x)),2)) > 1){
+        x = Divisao((x + Divisao(s,x)),2);
+	}
+	return x;
+}
 
 ```
 
@@ -23,6 +42,17 @@ quadrada de `S` (ou seja, a variável `x`) é fornecida pelo registrador R15 tam
 
 ```C
 int Potencia(int x, int N);
+```
+```C
+int MULT_unsigned(unsigned int a, unsigned int b){
+    if(b==0) return 0;
+    else return (a+MULT_unsigned(a, b-1));
+}
+
+int Potencia(int x, int N){
+    if (N==0) return 1;
+    else return MULT_unsigned(x, Potencia(x,(N-1)));
+}
 ```
 
 (b) Escreva a sub-rotina equivalente na linguagem Assembly do MSP430. `x` e `n` são fornecidos através dos registradores R15 e R14,
