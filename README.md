@@ -8,8 +8,8 @@ Repositório dedicado a disciplina Microprocessadores e Microcontroladores, Enge
 
 O objetivo deste projeto é Construir um dispositivo capaz de monitorar exercícios e suas repetições, programado através do Launchpad MSP430, buscando facilidade de utilização de estações de musculação.
 
-**[Relatório Final](https://github.com/ErickCReis/Microcontroladores/tree/master/3_Trabalho/Projeto_Final.pdf)**
+**[Relatório Final](https://github.com/ErickCReis/Microcontroladores/blob/master/3_Trabalho/Relatorio_Final.pdf)**
 
-**[Código](https://github.com/ErickCReis/Microcontroladores/tree/master/3_Trabalho/Projeto_final)**
+**[Código](https://github.com/ErickCReis/Microcontroladores/tree/master/3_Trabalho/Projeto_final/Proj_Micro)**
 
-*Equipe: @ErickCReis e @TiagoAvelino*
+*Equipe: [@ErickCReis](https://github.com/ErickCReis) e [@TiagoAvelino](https://github.com/TiagoAvelino)*
